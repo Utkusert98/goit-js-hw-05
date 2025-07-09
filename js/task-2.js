@@ -1,9 +1,9 @@
 
 const getUsersWithFriend = (users, friendName) => {
-  return users.filter((user) => user.friends.includes(friendName));
+  return users.filter(user => user.friends.includes(friendName));
 };
 
-const allUsers = [
+const usersTask2 = [
   { name: "Moore Hensley", friends: ["Sharron Pace"] },
   { name: "Sharlene Bush", friends: ["Briana Decker", "Sharron Pace"] },
   { name: "Ross Vazquez", friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"] },
@@ -13,11 +13,6 @@ const allUsers = [
   { name: "Sheree Anthony", friends: ["Goldie Gentry", "Briana Decker"] },
 ];
 
-console.log(getUsersWithFriend(allUsers, "Briana Decker"));
-// Sharlene Bush ve Sheree Anthony
-
-console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
-// Elma Head ve Sheree Anthony
-
-console.log(getUsersWithFriend(allUsers, "Adrian Cross"));
-// []
+console.log(getUsersWithFriend(usersTask2, "Briana Decker"));
+console.log(getUsersWithFriend(usersTask2, "Goldie Gentry"));
+console.log(getUsersWithFriend(usersTask2, "Adrian Cross")); 
